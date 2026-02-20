@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	data := readFile("input.txt")
+	data := readFile("../../input/day1.txt")
 	fmt.Println(Part1(data))
 	fmt.Println(Part2(data))
 }

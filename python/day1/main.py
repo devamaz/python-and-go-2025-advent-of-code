@@ -8,8 +8,11 @@ def read_file(filename: str) -> Generator[str, None, None]:
             yield line.strip()
 
 
+inputPath = "../../input/day1.txt"
+
+
 def part1() -> int:
-    moves = read_file("input2.txt")
+    moves = read_file(inputPath)
     length: int = 100
     curr: int = 50
     count: int = 0
@@ -28,7 +31,7 @@ def part1() -> int:
 
 
 def part2() -> int:
-    moves = read_file("../input/day1.txt")
+    moves = read_file(inputPath)
 
     length: int = 100
     curr: int = 50
@@ -48,5 +51,5 @@ def part2() -> int:
 
 
 if __name__ == "__main__":
-    # print(part1())
+    print(part1())
     print(part2())
